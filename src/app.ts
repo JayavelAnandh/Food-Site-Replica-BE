@@ -1,3 +1,4 @@
+// src/app.ts
 import express from "express";
 import cors from "cors";
 import menuRoutes from "./routes/menuRoutes";
@@ -13,4 +14,4 @@ app.get("/", (req, res) => {
 
 app.use("/api/menu", menuRoutes);
 
-export default app; 
+export default app;  // <-- export the app only
